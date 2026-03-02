@@ -3,9 +3,7 @@
  * Copyright (c) 2023 Vendicated and Vencord contributors
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
- 
 
- // ds
 import { mkdirSync, readFileSync } from "fs";
 import { access, constants as FsConstants, writeFile } from "fs/promises";
 import { VENCORD_FILES_DIR } from "main/vencordFilesDir";

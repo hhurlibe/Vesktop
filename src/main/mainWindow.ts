@@ -186,12 +186,13 @@ function initWindowBoundsListeners(win: BrowserWindow) {
     win.on("minimize", saveState);
     win.on("unmaximize", saveState);
 
-    const saveBounds = () => {
+    // I like to keep the default window size (because OCD), so disaling this
+    /* const saveBounds = () => {
         State.store.windowBounds = win.getBounds();
     };
 
     win.on("resize", saveBounds);
-    win.on("move", saveBounds);
+    win.on("move", saveBounds); */
 }
 
 function initSettingsListeners(win: BrowserWindow) {
